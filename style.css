@@ -66,3 +66,9 @@ body{
     height: 50px;
     color: white;
 }
+
+#total_tip{
+    font-size: 20px;
+    margin-top: 5px;
+    text-align: center;
+}

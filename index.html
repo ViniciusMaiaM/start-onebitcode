@@ -13,18 +13,18 @@
             <h1 class="title"> Tip Calculator</h1>
         </div>
         <div>
-            <form class="tips_form">
+            <form class="tips_form" id="tips_form">
                 <label for="bill">
                     <p>How much was the bill? </p>
                 </label>
                 <p>
-                    R$ <input type="number" placeholder="100" name="bill" id="bill" class="form_input">
+                    R$ <input type="number" placeholder="100" name="bill" id="bill" class="form_input" required>
                 </p>
                 <label for="service_quality">
                     <p>How was your service?</p>
                 </label>
                 <p>
-                    <select name="service_quality" id="service_quality" class="form_input">
+                    <select name="service_quality" id="service_quality" class="form_input" required>
                         <option disable selected value="0">Choose an option</option>
                         <option value="0.3">30% - Amazing </option>
                         <option value="0.2">20% - Good</option>
@@ -37,11 +37,17 @@
                     <p>How many people will pay the bill? </p>
                 </label>
                 <p>
-                    <input type="number" placeholder="1" name="people" id="people" class="form_input"> people
+                    <input type="number" placeholder="1" name="people" id="people" class="form_input" required> people
                 </p>
                 <button type="submmit" class="form_submit">Calculate</button>
             </form>
         </div>
+        <div id="total_tip">
+            Total tip:
+            R$:<span id="tip">0.00</span>
+            <span id="each">each</span>
+        </div>
     </div>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
